@@ -113,3 +113,13 @@ class One{
         System.out.println(admins);
     }
 }
+
+
+Function..................
+
+What is Function interface in Java?
+👉 Function is a functional interface used to take one input and return one output.
+🔹 Definition (1 line)
+Function takes one argument and returns a result.
+
+  
