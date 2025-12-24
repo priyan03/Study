@@ -122,4 +122,17 @@ What is Function interface in Java?
 🔹 Definition (1 line)
 Function takes one argument and returns a result.
 
+Methods in Function Interface
+The Function interface consists of the following 4 methods, as listed, which are later discussed as follows:
+
+apply()
+andThen()
+compose()
+identity()
+  
+Supplier...................
+  What is Supplier in Java?
+👉 Supplier is a functional interface that supplies (provides) a value and does NOT take any input.
+🔹 Simple definition (1 line)
+Supplier returns a value without taking any arguments.
   
