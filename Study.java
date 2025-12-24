@@ -84,3 +84,32 @@ class PredicateInterfaceExample5 {
     }
 }
 
+import java.util.*;
+import java.util.function.*;
+import java.io.*;
+import java.util.stream.*;
+
+class One{
+    private String name;
+    private String role;
+    public One(String name, String role){
+        this.name = name;
+        this.role = role;
+    }
+    public String getName(){
+        return name;
+    }
+    public String getRole(){
+        return role;
+    }
+    public String toString(){
+        return "User name : " + name + " Role : " + role;
+    }
+    public static void main(String[] args) {
+        List<One> one = new ArrayList<One>();
+        one.add(new One("John", "Admin"));
+        one.add(new One("Peter", "Member"));
+        List admins = one.stream().filter((ones) -> ones.getRole().equals("Member")).collect(Collectors.toList());
+        System.out.println(admins);
+    }
+}
