@@ -1,10 +1,13 @@
 A functional interface in Java is an interface that has only one abstract method, making it suitable for use with lambda expressions and method references (introduced in Java 8).
 
+Runnable, callable, compareable,  consumer,  predicate, Function, supplier, actionListener. etc.....
+
+  
 Use @FunctionalInterface to ensure only one abstract method (annotation is optional).
 Enable clean, concise code using lambdas and method references.
 
 It has some predefined functional interface in java like, 
-*Consumer,
+* Consumer,
 * Predicate,
 * Supplier. etc...
 ------------------------------
@@ -129,6 +132,21 @@ apply()
 andThen()
 compose()
 identity()
+
+import java.util.*;
+import java.util.function.*;
+import java.io.*;
+import java.util.stream.*;
+
+public class One {
+
+    public static void main(String[] args) {
+        Function<Integer, Integer> addFive = a -> a + 5;
+        Function<Integer, Integer> multiplyByTwo = a -> a * 2;
+        Function<Integer, Integer> result = addFive.andThen(multiplyByTwo);
+        System.out.println(result.apply(3));
+    }
+}
   
 Supplier...................
   What is Supplier in Java?
