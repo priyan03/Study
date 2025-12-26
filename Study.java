@@ -154,3 +154,17 @@ Supplier...................
 🔹 Simple definition (1 line)
 Supplier returns a value without taking any arguments.
   
+Expection handling.............................................
+
+
+  try = its a block , it might throw expection.
+  catch = its a block,  it will handle expection when error occure.
+  finally = error occure or not , it will always execute.
+  throw = its used to explicit, if something goes wrong that we know already.
+  throws = Declares exceptions that a method might throw, informing the caller to handle them. 
+
+  Throwable
+ ├── Exception
+ │     └── runtime(unchecked e) and compile time(checked e).
+ └── Error
+       └── OutOfMemoryError(unchecked e).
